@@ -13,7 +13,12 @@ function TourCard({ title, url, description, photos, tags, onTagClick }) {
 
       <div className="">
         {/* Title */}
-        <a href={url} className="font-semibold text-xl">
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-xl"
+        >
           {title}
         </a>
 
@@ -25,7 +30,12 @@ function TourCard({ title, url, description, photos, tags, onTagClick }) {
         </p>
 
         {/* Read more */}
-        <a href={url} className="text-sm text-blue-500 underline">
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-blue-500 underline"
+        >
           อ่านต่อ
         </a>
 
